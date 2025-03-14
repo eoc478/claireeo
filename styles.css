@@ -1,0 +1,75 @@
+/* styles.css */
+body {
+    font-family:'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #cde2f1;
+    text-align: center;
+}
+
+.floating-nav {
+    position: fixed;
+    top: 3vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(64, 64, 165, 0.1);
+}
+
+.floating-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10vh;
+}
+
+.floating-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+.title {
+    font-size: 7vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom:before {
+    font-size: 4vh;
+    content: "";
+    animation: animate infinite 8s;
+}
+
+@keyframes animate{
+    0%, 19%{
+        content: "a design technologist";
+    }
+    20%, 39%{
+        content: "loves creative computing";
+    }
+    40%, 59%{
+        content: "an artist";
+    }
+    60%, 79%{
+        content: "an interactive designer";
+    }
+    80%, 100%{
+        content: "an inner child at heart";
+    }
+}
+
+/* @keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+} */
